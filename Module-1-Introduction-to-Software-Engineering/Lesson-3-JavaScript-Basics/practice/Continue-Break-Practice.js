@@ -38,6 +38,7 @@ let newArray = [];
 for (let i = 0; i < mixedArray.length; i++) {
   if (typeof mixedArray[i] === 'number') {
     continue 
+    
   }
   newArray.push(mixedArray[i]);
 }

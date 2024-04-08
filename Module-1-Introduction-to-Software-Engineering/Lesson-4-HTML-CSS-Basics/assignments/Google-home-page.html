@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raff</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: forestgreen;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ddd;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .header-left span {
+            font-size: 24px;
+            font-weight: bold;
+            color: forestgreen;
+            margin-right: 10px;
+        }
+        .header-left input[type="text"] {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 400px;
+        }
+        .header-right button {
+            margin-left: 10px;
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            cursor: pointer;
+        }
+        #searchResults {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <span>Raff</span>
+            <input id="searchInput" type="text" placeholder="Search Raff or type a URL">
+        </div>
+        <div class="header-right">
+            <button onclick="searchGoogle()">Raff Search</button>
+            <button onclick="feelingLucky()">I'm Feeling Lucky</button>
+        </div>
+    </header>
+    <main id="searchResults">
+        <!-- Search results and other content here -->
+    </main>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+    
+    <script>
+        function searchGoogle() {
+            const input = document.getElementById('searchInput').value;
+            window.location.href = "https://www.google.com/search?q=" + input;
+        }
+
+        function feelingLucky() {
+            window.location.href = "https://www.google.com/search?q=i%27m+feeling+lucky";
+        }
+    </script>
+</body>
+</html>
+

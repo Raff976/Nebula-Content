@@ -1,38 +1,16 @@
 console.log ("myfirstlog")
 
-let moose = {
-    name: "Mike",
-    age: 15,
-    weight: 500, // in kilograms
-    eat: function(food) {
-        if (food === "grass") {
-            this.weight += 5; // Assume 5 kg gained by eating grass
-            return `${this.name} ate some grass and gained weight. He now weighs ${this.weight} kg.`;
-        } else {
-            return `${this.name} doesn't eat ${food}.`;
-        }
+function monkeyCount(n) {
+    let result = [];
+    for (let i = 1; i <= n; i++) {
+        result.push(i);
     }
-};
-
-console.log(moose.eat("grass")); 
-console.log(moose.eat("leaves")); 
-
-
-function addPropertyToObject(obj, propName, propValue) {
-    obj[propName] = propValue;
+    return result;
 }
 
-let Moose = {
-    name: "Mike",
-    age: 15,
-    weight: 500 // in kilograms
-};
-
-addPropertyToObject(moose, "color", "brown");
-
-console.log(moose);
-
-
+// Example usage
+console.log(monkeyCount(10)); 
+console.log(monkeyCount(1));
 
 
 

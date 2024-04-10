@@ -1,0 +1,7 @@
+#uniqueId {
+    color: blue; /* Styles for the element with id="uniqueId" */
+}
+
+.multipleElements {
+    font-size: 16px; /* Styles for all elements with class="multipleElements" */
+}

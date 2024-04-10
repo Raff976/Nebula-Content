@@ -59,11 +59,11 @@ document.body.appendChild(h1Element);
 
 const lightRedBox = document.createElement('div');
 lightRedBox.style.width = '450px';
-lightRedBox.style.height = '70px'; // Adjust the height as needed
+lightRedBox.style.height = '70px'; 
 lightRedBox.style.backgroundColor = 'forestgreen';
 lightRedBox.style.position = 'absolute';
-lightRedBox.style.right = '70px'; // Adjust the right position as needed
-lightRedBox.style.top = '70px'; // Adjust the top position as needed
+lightRedBox.style.right = '70px'; 
+lightRedBox.style.top = '70px'; 
 lightRedBox.style.color = 'white';
 lightRedBox.style.display = 'flex';
 lightRedBox.style.justifyContent = 'center';
@@ -72,7 +72,7 @@ document.body.appendChild(lightRedBox);
 
 const treesPlanted = document.createElement('span');
 treesPlanted.textContent = 'trees planted';
-treesPlanted.style.fontSize = '4.5em'; // Adjust the font size as needed
+treesPlanted.style.fontSize = '4.5em';
 lightRedBox.appendChild(treesPlanted);
 
 const incrementButton = document.createElement('button');
